@@ -1,17 +1,22 @@
-/* font import */
+/*----------------------------
+            font import
+----------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-
+:root{
+    --button-color:#E02C6D;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
 }
-/* ------------
-   Header Section 
-----------------*/
+/* -------------------------------------------------
+               Header Section style
+----------------------------------------------------*/
 header{
     background-color: #2D25A0;
     width: 100%;
     height: 677px;
+    margin-bottom: 70px;
 }
 nav{
     display: flex;
@@ -27,7 +32,6 @@ nav{
 }
 .main-nav:hover{
     border: 2px solid #5f5aa5;
-    position: sticky;
 }
 .nav-link{
     padding-right: 15px;
@@ -38,7 +42,98 @@ a{
     font-size: 16px;
 }
 .login-button{
-    background-color: #E02C6D;
+    background-color: var(--button-color);
     width: 123px;
     height: 44px;
+}
+/* -------------------
+   banner section styles
+----------------------- */
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 120px 0 180px;
+    padding: 0 0 115px 0;
+
+}
+
+.banner-text{
+    width: 485px;
+    height: 230px;
+}
+.banner-text-font{
+    font-weight: 700;
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.banner-image img{
+    width: 530px;
+    height: 438px;
+}
+.watch-button{
+    width: 168px ;
+    height: 44px;
+    background-color: var(--button-color);
+   
+}
+/* --------------------Players Section Styles -------------
+------------------------------------------------------------*/
+#players-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 165px;
+}
+.players-detail{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:30px ;
+
+}
+.individual-player-detail img{
+    width: 100%;
+}
+.individual-player-detail{
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    border: 3px solid white;
+    box-shadow: 5px 5px 30px rgba(12, 0, 0, 0.178);
+}
+.player-name{
+    font-weight: 700; 
+    font-size: 28px;
+}
+/* --------------- */
+#copa-america{
+    display: flex;
+    justify-content: space-between;
+    margin: 165px 150px 170px 240px;
+}
+.highlights{
+  width: 469px;
+  height: 309px;
+  margin-top:  40px; 
+}
+.highlights:hover{
+    border: 3px solid #2f93d6;
+}
+.highlights-font{
+   font-size: 48px ;
+   color:  #0A0826;
+   margin-top: 10px;
+   margin-bottom: 0;
+}
+.highlights-img{
+  width: 567px;
+  height: 427px;
+}
+.highlights-img img{
+   width: 100%;
+}
+.copa-info{
+    margin-top: 0;
+    margin-bottom: 15px;
 }
