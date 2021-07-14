@@ -201,7 +201,19 @@ footer{
         font-size: 30px;
         
     }
-   .players-detail{
+   .players-detail {
        grid-template-columns: repeat(1,1fr);
+       justify-content: center;
+       align-items: center;
+   }
+   .highlights{
+       margin-bottom: 20px;
+   }
+   #copa-america{
+       display: grid;
+      grid-template-columns: repeat(1,1fr);
+       margin-bottom: 150px;
+       justify-content: center;
+       align-items: center;
    }
 }
