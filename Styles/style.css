@@ -110,7 +110,10 @@ a{
 #copa-america{
     display: flex;
     justify-content: space-between;
-    margin: 165px 150px 170px 240px;
+    margin-left: 182px;
+    margin-right: 156px;
+    margin-top: 165px;
+    margin-bottom: 158px;
 }
 .highlights{
   width: 469px;
@@ -136,4 +139,38 @@ a{
 .copa-info{
     margin-top: 0;
     margin-bottom: 15px;
+}
+/*---------- Footer Syle ----------- */
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-football{
+   width: 484px;
+   height: 213px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    margin-top: 0;
+    margin-bottom:63px ;
+}
+.footer-logo{
+   width: 484px;
+   height: 213px;
+}
+.footer-logo img{
+    width: 100%;
+}
+.footer-icons{
+    margin: 0 0 20px 0;
+}
+.icon{
+    
+    /* background-color:  #969BAB ;; */
+    color:  #0B0D17;
+    padding:   7px;
+    border-radius: 25px;
+    /* color: #FFFFFF; */
+    margin: 5px;
 }
