@@ -102,11 +102,17 @@ a{
     border: 3px solid white;
     box-shadow: 5px 5px 30px rgba(12, 0, 0, 0.178);
 }
+.individual-player-detail:hover{
+    border: 3px solid #2f93d6;
+}
 .player-name{
     font-weight: 700; 
     font-size: 28px;
 }
-/* --------------- */
+
+/* --------------- ------------------------------
+                 Highlights Section       
+-------------------------------------------------  */
 #copa-america{
     display: flex;
     justify-content: space-between;
@@ -140,7 +146,9 @@ a{
     margin-top: 0;
     margin-bottom: 15px;
 }
-/*---------- Footer Syle ----------- */
+/*---------- ---------------------------
+---------Footer Syle ----------------
+---------------------------------------- */
 footer{
     display: flex;
     justify-content: center;
@@ -163,14 +171,35 @@ footer{
     width: 100%;
 }
 .footer-icons{
-    margin: 0 0 20px 0;
+    margin-bottom:20px;
 }
 .icon{
-    
-    /* background-color:  #969BAB ;; */
     color:  #0B0D17;
-    padding:   7px;
+    padding:7px;
     border-radius: 25px;
-    /* color: #FFFFFF; */
     margin: 5px;
+}
+
+/* ===========================
+================Media Quaries ==================
+=================================================== */
+
+@media only screen and (max-width:688px){
+    body{
+        width: 688px;
+        overflow-x: hidden;
+    }
+    .links{
+        display: none;
+    }
+    .banner{
+        width: 688px;
+        margin-left: 35px;
+        box-sizing: border-box;
+    }
+    .banner-text-font{
+        font-size: 30px;
+        
+    }
+   
 }
